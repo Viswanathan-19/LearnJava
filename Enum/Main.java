@@ -8,10 +8,10 @@ public class Main {
         Status s=Status.Success;
         System.out.println(s);              //It outputs success
         Status []a=Status.values();      //It returns all the values of enum as an array
-        // System.out.println(s.ordinal());   prints the index number of enum i.e 3 
+        // System.out.println(s.ordinal());   prints the index number of enum i.e  output=3 
 
         for(Status st:a){
-            System.out.println(st);
+            System.out.println(st+" : "+ st.ordinal());
         }
     }
 }
