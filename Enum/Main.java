@@ -14,12 +14,12 @@ enum Bikes{
     
     private Bikes() {      //can create objects without constructor and manually assign its value
         cc=390;
-        System.out.println("Calling Default Constructor");
+        System.out.println("Calling Default Constructor" + this.name());
     }
 
     private Bikes(int cc) {
         this.cc = cc;
-        System.out.println("Constructor is called ");  //the constructor is called for all enum objects
+        System.out.println("Constructor is called "+this.name());  //the constructor is called for all enum objects
     }
 
     public int getCc() {
