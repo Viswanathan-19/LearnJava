@@ -10,7 +10,7 @@ public class Main {
         A obj=new A()
         {
             public void show(){                      //Anonymous Inner Class,i.e inside  Main class . It has only implementation without class name ,
-                                                    //It has Main$1.class File,number indicates the class,for multiple classes number goes from 1 to n.It is used when use this class only once
+                                                    //It has Main$1.class File,number indicates the class,for multiple classes number goes from 1 to n.It is used when we use this class only once
                                                     //It reduces instead of creating another class and inherit the method to access them.
                 System.out.println("In new Show");
             }
