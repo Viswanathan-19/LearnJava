@@ -13,5 +13,24 @@ public class Main {
         for(Status st:a){
             System.out.println(st+" : "+ st.ordinal());
         }
+
+        switch(s){
+            case Status.Running:               //This is also Correct
+                 System.out.println("Running");
+                 break;
+            
+            case Pending:                        //Can use directly,because switch recognises this is enum
+                 System.out.println("Pending");
+                 break;
+            
+            case Failed:
+                 System.out.println("Failed");
+                 break;
+            
+            case Success:
+                 System.out.println("Success");
+                 break;
+            
+        }
     }
 }
