@@ -6,13 +6,22 @@ public class Main {
         int num2=20;
         int result=0;
 
+        int[] a=new int[5];
         // result=num2/num1;            Arithmetic exception
 
         try{
-            result=num2/num1;           
+            result=num2/num1; 
+                      
         }
         catch(Exception e){                         //the exception is catched here,results in not stoping the program execution
-            System.out.println("Something went wrong");
+            System.out.println("Something went wrong |"+e.getMessage());
+        }
+        try{
+          System.out.println(a[6]);
+        }
+        catch(Exception e){
+        
+            System.out.println("Something went wrong | "+e.getMessage());
         }
         System.out.println(result);
 
