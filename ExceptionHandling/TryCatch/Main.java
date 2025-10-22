@@ -2,26 +2,28 @@ package TryCatch;
 
 public class Main {
     public static void main(String[] args) {
-        int num1=0;
+        int num1=10;
         int num2=20;
         int result=0;
+        String s=null;
 
         int[] a=new int[5];
         // result=num2/num1;            Arithmetic exception
 
         try{
             result=num2/num1; 
-                      
+            System.out.println(a[1]);        
+            System.out.println(s.length());
         }
-        catch(Exception e){                         //the exception is catched here,results in not stoping the program execution
-            System.out.println("Something went wrong |"+e.getMessage());
+        catch(ArithmeticException e){                         //the exception is catched here,results in not stoping the program execution
+            System.out.println(e.getMessage());
         }
-        try{
-          System.out.println(a[6]);
+        catch(ArrayIndexOutOfBoundsException e){
+        
+            System.out.println(e.getMessage());
         }
         catch(Exception e){
-        
-            System.out.println("Something went wrong | "+e.getMessage());
+            System.out.println("Something went wrong "+e);
         }
         System.out.println(result);
 
