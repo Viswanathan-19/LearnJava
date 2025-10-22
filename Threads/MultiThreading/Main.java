@@ -1,6 +1,6 @@
 package MultiThreading;
 
-// import jdk.internal.vm.ThreadContainer;
+
 
 class A extends Thread{
   
