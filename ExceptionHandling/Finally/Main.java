@@ -6,7 +6,7 @@ public class Main {
             System.out.println("Inside try block");
             int result = 10 / 0; // This throws ArithmeticException
         }
-        finally {
+        finally {             //Even though there’s no catch, the finally block still runs before the program crashes.
             System.out.println("Finally always runs!");
         }
 
