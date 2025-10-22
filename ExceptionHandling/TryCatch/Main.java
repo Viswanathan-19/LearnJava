@@ -11,7 +11,7 @@ public class Main {
         // result=num2/num1;            Arithmetic exception
 
         try{
-            result=num2/num1; 
+            result=num2/num1;            //If this is an exception,following statements in try block dont get executed, it directly jumps to catch block.
             System.out.println(a[1]);        
             System.out.println(s.length());
         }
@@ -19,9 +19,9 @@ public class Main {
             System.out.println(e.getMessage());
         }
         catch(ArrayIndexOutOfBoundsException e){
-        
-            System.out.println(e.getMessage());
+        System.out.println(e.getMessage());
         }
+        
         catch(Exception e){
             System.out.println("Something went wrong "+e);
         }
