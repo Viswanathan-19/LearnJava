@@ -1,7 +1,13 @@
 package Synchronization;
 class Printer {
     void printDocs(String doc) {
-        synchronized(this) {  //same object type with same reference accessing the method,one thread allowed.
+        // synchronized(this) {  //same object type with same reference accessing the method,one thread allowed.
+                                //But for Different reference of same object type ,multiple threads can access the block,each thread has its own lock.
+        //     for (int i = 1; i <= 3; i++) {
+        //         System.out.println(Thread.currentThread().getName() + " printing " + doc + " page " + i);
+        //     }
+        // }
+        synchronized(Printer.class) {  //only one instance allowed per class at a time(One thread at a time).
             for (int i = 1; i <= 3; i++) {
                 System.out.println(Thread.currentThread().getName() + " printing " + doc + " page " + i);
             }
